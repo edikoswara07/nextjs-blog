@@ -1,3 +1,11 @@
+import Layout from "../components/Layout";
+import Navbar from "../components/parts/Navbar";
 export default function Home() {
-  return <>Hallo</>;
+  return (
+    <>
+      <Layout title="Blog | Home">
+        <Navbar />
+      </Layout>
+    </>
+  );
 }
