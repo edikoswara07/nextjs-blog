@@ -1,10 +1,11 @@
 import Layout from "../components/Layout";
-import Navbar from "../components/parts/Navbar";
+import HomePage from "./views/HomePage";
+
 export default function Home() {
   return (
     <>
-      <Layout title="Blog | Home">
-        <Navbar />
+      <Layout title="Blog | Edikoswara">
+        <HomePage />
       </Layout>
     </>
   );

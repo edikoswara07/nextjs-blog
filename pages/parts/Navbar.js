@@ -1,7 +1,7 @@
 import React from "react";
-import Container from "../Container";
+import Container from "../../components/Container";
 import Link from "next/link";
-import datas from "../data/Navbar";
+import datas from "../../components/data/Navbar";
 
 const Navbar = (props) => {
   return (
@@ -14,10 +14,10 @@ const Navbar = (props) => {
                 <a className="py-3 px-4 text-teal-900 text-base">Edikoswara</a>
               </Link>
             </div>
-            <div>
+            <div className="hidden md:block">
               {datas.map((data) => (
                 <Link key={data.id} href={data.urlPath}>
-                  <a className="text-xs text-emerald-700 py-3 px-4 hover:bg-emerald-900 hover:text-emerald-100 rounded-md">
+                  <a className="text-xs text-medium text-emerald-700 py-3 px-4 hover:bg-emerald-900 hover:text-emerald-100 rounded-md">
                     {data.urlName}
                   </a>
                 </Link>
